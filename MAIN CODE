@@ -1,8 +1,9 @@
+# Imports all from Tkinter GUI Package
 from tkinter import *
 import tkinter.messagebox
 import math
 
-
+# Initialization
 root = Tk()
 root.geometry("650x450+450+450")
 root.title("Scientific Calculator")
@@ -11,7 +12,7 @@ switch = None
 
 # Button on press
 
-
+#functions of buttons
 def btn1_clicked():
     if disp.get() == '0':
         disp.delete(0, END)
@@ -111,7 +112,7 @@ def btnc_clicked(*args):
     disp.delete(0, END)
     disp.insert(0, '0')
 
-
+#importing math library
 def sin_clicked():
     try:
         ans = float(disp.get())
@@ -314,7 +315,7 @@ def btneq_clicked(*args):
         tkinter.messagebox.showerror("Value Error", "Check your values and operators")
 
 
-# Label
+# Label of text field
 
 
 
